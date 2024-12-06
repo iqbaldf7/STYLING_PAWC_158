@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <!-- Link to Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling with gradient background */
+        body {
+            background: linear-gradient(135deg, #0d0d0d, #222222); /* Dark gradient for modern look */
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh; /* Full height */
+            padding: 20px;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 4rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.7); /* Light gray text */
+            margin-bottom: 30px;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.5s ease-out 0.3s forwards; /* Delay animation for paragraph */
+        }
+
+        /* Button styling */
+        .btn-primary {
+            font-size: 18px;
+            padding: 15px 30px;
+            background-color: #007bff; /* Blue color */
+            color: white;
+            border: none;
+            border-radius: 25px; /* Rounded corners for the button */
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Dark blue on hover */
+            transform: translateY(-4px); /* Slight lift effect */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+        .btn-primary:active {
+            transform: translateY(0); /* Reset the effect when clicked */
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #111111; /* Dark footer */
+            color: rgba(255, 255, 255, 0.5); /* Light text color */
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Keyframe for fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
-    <h1>Ini Halaman Rumah </h1>
+
+    <div class="container">
+        <h1>Welcome to the Future!</h1>
+        <p>Explore the modern design with smooth transitions and a minimalist look.</p>
+        <a href="/todo-view" class="btn-primary">Go to Todo</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 | Iqbal Dwi F. </p>
+    </footer>
+
 </body>
+
 </html>

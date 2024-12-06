@@ -1,0 +1,83 @@
+
+#signupPage {
+    background-color: #f4f6f9; 
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+#signupPage .logo-img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+
+#signupPage .form-group {
+    margin-bottom: 25px;
+}
+
+#signupPage .form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#signupPage .form-control:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); 
+}
+
+/* Tombol Submit */
+#signupPage .btn-primary {
+    font-size: 16px;
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #007bff;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#signupPage .btn-primary:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+}
+
+#signupPage .btn-primary:active {
+    background-color: #003f7f; 
+}
+
+
+#signupPage .card {
+    max-width: 550px; 
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#signupPage .card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); 
+}
+
+
+@media (max-width: 576px) {
+    #signupPage .card {
+        width: 90%;
+    }
+}
+
+
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
